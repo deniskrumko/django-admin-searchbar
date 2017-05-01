@@ -3,6 +3,7 @@
 {% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
 {% block branding %}
+{# Set `tabindex="-1"` to use TAB to open searchbar #}
 <h1 id="site-name"><a href="{% url 'admin:index' %}" tabindex="-1">{{ site_header|default:_('Django administration') }}</a></h1>
 {% endblock %}
 
