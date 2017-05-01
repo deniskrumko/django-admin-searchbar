@@ -1,0 +1,49 @@
+/*
+Stylesheet for "django-admin-searchbar".
+Source: https://github.com/deniskrumko/django-admin-searchbar
+*/
+
+/* Main <input> element for searchbar */
+#django-admin-searchbar {
+  background-color: #50859F;
+  border: 1px solid #406475;
+  cursor: pointer;
+  width: 150px;
+  margin-right: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Make searchbar a bit lighter on mouse hover */
+#django-admin-searchbar:hover {
+  background-color: rgb(90,143,169);
+}
+
+/* Stretch searchbar when it's in focus: */
+/* If window width is less that 1100px - searchbar will stretch less */
+@media (max-width: 1100px) {
+  #django-admin-searchbar:focus {
+    width: 250px;
+    background-color: white;
+    cursor: text;
+  }
+}
+
+/* If window width is more that 1100px - searchbar will stretch more */
+@media (min-width: 1100px) {
+  #django-admin-searchbar:focus {
+    width: 350px;
+    background-color: white;
+    cursor: text;
+  }
+}
+
+/* Placeholder color */
+#django-admin-searchbar::-webkit-input-placeholder {
+  color: #eee;
+}
+
+/* Placeholder color in focus */
+#django-admin-searchbar:focus::-webkit-input-placeholder {
+  color: gray;
+}
