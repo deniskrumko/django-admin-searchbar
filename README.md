@@ -3,14 +3,14 @@ django-admin-searchbar
 
 **django-admin-searchbar** allows to easily search for models in [Django Administration](https://docs.djangoproject.com/en/1.11/ref/contrib/admin/).
 
-![alt image](http://i.imgur.com/LRivXqZ.gif)
+**☠️ THIS PROJECT IS NO LONGER SUPPORTED ☠️**
 
-**Live example**: http://django-admin-searchbar-live.bitballoon.com/
+![alt image](http://i.imgur.com/LRivXqZ.gif)
 
 Requires:
 
-  * Django >=1.8
-  * Python 2.7 or >=3.3
+  * Django >=1.8 (not tested on new versions since Django >= 2)
+  * Python 2.7 or >=3.3 (not tested on new versions since Python >= 3.4)
 
 Installation
 ------------
